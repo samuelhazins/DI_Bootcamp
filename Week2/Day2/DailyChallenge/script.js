@@ -7,14 +7,14 @@
 // For example, the result here should be : “The movie is good, I like it”
 // If the word “bad” does not come after “not” or the words are not in the sentence, console.log the original sentence.
 
-const sentence = "The movie is not that bad, I like it"
-const wNot = sentence.search("not")
-const wBad = sentence.search("bad")
+const sentence = "The movie is not that bad, I like it";
+const wNot = sentence.search("not");
+const wBad = sentence.search("bad");
 
 if (wNot < wBad) {
-    const firstPart = sentence.slice(0, wNot)
-    const secondPart = sentence.slice(wBad + 3)
-    console.log(firstPart + "good" + secondPart)
+    const firstPart = sentence.slice(0, wNot);
+    const secondPart = sentence.slice(wBad + 3);
+    console.log(firstPart + "good" + secondPart);
 } else {
-    console.log(sentence)
+    console.log(sentence);
 }
